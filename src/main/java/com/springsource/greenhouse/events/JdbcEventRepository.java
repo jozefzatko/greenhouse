@@ -105,7 +105,7 @@ public class JdbcEventRepository implements EventRepository {
 		} else {
 			jdbcTemplate.update("insert into EventSessionRating (event, session, attendee, rating, comment) values (?, ?, ?, ?, ?)", eventId, sessionId, attendeeId, rating.getValue(), rating.getComment());			
 		}
-		Float newAvgRating = jdbcTemplate.queryForObject("select round(avg(cast(rating as double)) * 2, 0) / 2 from EventSessionRating where event = ? and session = ? group by event, session", Float.class, eventId, sessionId);
+		Float newAvgRating = jdbcTemplate.queryForObject("select round(avg(cast(rating as real)) * 2, 0) / 2 from EventSessionRating where event = ? and session = ? group by event, session", Float.class, eventId, sessionId);
 		jdbcTemplate.update("update EventSession set rating = ? where event = ? and id = ?", newAvgRating, eventId, sessionId);
 		return newAvgRating;
 	}

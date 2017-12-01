@@ -56,7 +56,7 @@ public class SecurityConfig {
 	 * @author Keith Donald
 	 */
 	@Configuration
-	@Profile("embedded")
+	@Profile({"embedded", "test"})
 	static class Embedded {
 
 		@Bean

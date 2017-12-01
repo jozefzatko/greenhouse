@@ -1,18 +1,18 @@
-create table MemberAction (id identity,
+create table MemberAction (id SERIAL,
 					actionType varchar not null,
 					performTime timestamp not null,
-					latitude double,
-					longitude double,
+					latitude real,
+					longitude real,
 					member bigint,
 					primary key (id),					
 					foreign key (member) references Member(id));
 
 create table Badge (name varchar,
 					description varchar not null,
-					level tinyint not null,
+					level smallint not null,
 					primary key (name));
 					
-create table AwardedBadge(id identity,
+create table AwardedBadge(id SERIAL,
 					badge varchar not null,
 					awardTime timestamp not null,
 					member bigint not null,

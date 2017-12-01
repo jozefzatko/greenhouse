@@ -69,6 +69,11 @@ public class GenericDatabaseUpgrader implements DatabaseUpgrader {
 	}
 
 	public void run() {
+
+		if (changeSets == null) {
+			return;
+		}
+
 		for (DatabaseChangeSet changeSet : changeSets) {
 			if (currentVersion.lessThan(changeSet.getVersion())) {
 				if (logger.isInfoEnabled()) {
@@ -89,13 +94,13 @@ public class GenericDatabaseUpgrader implements DatabaseUpgrader {
 		try {
 			connection = dataSource.getConnection();
 			DatabaseMetaData metadata = connection.getMetaData();
-			ResultSet result = metadata.getTables(null, null, "DATABASEVERSION", null);
+			ResultSet result = metadata.getTables(null, null, "databaseversion", null);
 			try {
 				// checks if the table exists, if not, creates it
 				if (result.next()) {
 					Statement stmt = connection.createStatement();
 					try {
-						stmt.execute("select value from DatabaseVersion");
+						stmt.execute("select value from databaseversion");
 						ResultSet queryResult = stmt.getResultSet();
 						try {
 							queryResult.next();
@@ -128,7 +133,7 @@ public class GenericDatabaseUpgrader implements DatabaseUpgrader {
 				try {
 					connection.close();
 				} catch (SQLException e) {
-					
+					logger.error(e.getLocalizedMessage());
 				}
 			}
 		}

@@ -1,4 +1,4 @@
-create table Member (id identity,
+create table Member (id SERIAL,
 					firstName varchar not null, 
 					lastName varchar not null,
 					email varchar(320) not null unique,

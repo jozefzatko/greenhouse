@@ -27,6 +27,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
@@ -128,5 +129,35 @@ public class DataConfig {
 			return dataSource;
 		}
 		
+	}
+
+	/**
+	 * Test Data configuration.
+	 * @author Jozef Zatko
+	 */
+	@Configuration
+	@Profile("test")
+	static class Test {
+
+		@Inject
+		private Environment environment;
+
+		@Inject
+		private TextEncryptor textEncryptor;
+
+		@Bean
+		public DataSource dataSource() {
+
+			DriverManagerDataSource dataSource = new DriverManagerDataSource();
+
+			dataSource.setDriverClassName("org.postgresql.Driver");
+			dataSource.setUrl("jdbc:postgresql://localhost:5432/greenhouse");
+			dataSource.setUsername("postgres");
+			dataSource.setPassword("password");
+
+			new DatabaseUpgrader(dataSource, environment, textEncryptor).run();
+			return dataSource;
+		}
+
 	}
 }

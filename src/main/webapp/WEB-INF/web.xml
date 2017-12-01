@@ -3,6 +3,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
+	<!-- Application profile -->
+	<context-param>
+		<param-name>spring.profiles.active</param-name>
+		<param-value>test</param-value>
+	</context-param>
+
 	<!-- Java-based annotation-driven Spring container definition -->
 	<context-param>
     	<param-name>contextClass</param-name>

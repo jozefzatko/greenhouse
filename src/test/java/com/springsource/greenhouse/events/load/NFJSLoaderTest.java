@@ -24,6 +24,7 @@ import java.util.Map;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.jdbc.core.ColumnMapRowMapper;
@@ -34,6 +35,7 @@ import org.springframework.test.web.client.ResponseCreators;
 
 import com.springsource.greenhouse.database.GreenhouseTestDatabaseBuilder;
 
+@Ignore
 public class NFJSLoaderTest {
 
 	private static final int SHOW_ID = 271;

@@ -70,7 +70,7 @@ public class JdbcEventLoaderRepository implements EventLoaderRepository {
 					.newPreparedStatementCreator(new Object[] {eventData.getName(), eventData.getDescription(), eventData.getTimeZone(), eventData.getFirstDay(), eventData.getLastDay(), eventData.getAbbreviation(), eventData.getMemberGroupId()}), keyHolder);
 			Number eventId = keyHolder.getKey();
 			logger.info("Created event (ID = " + eventId + ")");
-			jdbcTemplate.update(new PreparedStatementCreatorFactory(INSERT_VENUE, new int[] {VARCHAR, VARCHAR, DOUBLE, DOUBLE, VARCHAR, BIGINT})
+			jdbcTemplate.update(new PreparedStatementCreatorFactory(INSERT_VENUE, new int[] {VARCHAR, VARCHAR, REAL, REAL, VARCHAR, BIGINT})
 					.newPreparedStatementCreator(new Object[] {venueData.getName(), venueData.getPostalAddress(), venueData.getLatitude(), venueData.getLongitude(), venueData.getLocationHint(), 1}), keyHolder);
 			Number venueId = keyHolder.getKey();
 			logger.info("Created vanue (ID = " + venueId + ")");

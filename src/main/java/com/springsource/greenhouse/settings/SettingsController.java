@@ -56,7 +56,7 @@ public class SettingsController {
 	@RequestMapping(value="/settings", method=RequestMethod.GET)
 	public void settingsPage(Account account, Model model) {
 		// TODO: Fix this query
-		List<Map<String, Object>> apps = jdbcTemplate.queryForList("select a.name as name, c.token_id as accessToken from App a, oauth_access_token c where c.client_id = a.apiKey and c.user_name = ?", account.getId());
+		List<Map<String, Object>> apps = jdbcTemplate.queryForList("select a.name as name, c.token_id as accessToken from App a, oauth_access_token c where c.client_id = a.apiKey and c.user_name = ?", account.getId()+"");
 		model.addAttribute("apps", apps);
 	}
 	

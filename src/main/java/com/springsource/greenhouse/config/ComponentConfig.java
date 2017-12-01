@@ -44,8 +44,8 @@ public class ComponentConfig {
 	 * Properties to support the 'standard' mode of operation.
 	 */
 	@Configuration
-	@Profile("standard")
-	@PropertySource("classpath:application.properties")
+	@Profile({ "standard", "test" })
+	@PropertySource("classpath:com/springsource/greenhouse/config/embedded.properties")
 	static class Standard {
 	}
 

@@ -101,7 +101,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		LocalValidatorFactoryBean factory = new LocalValidatorFactoryBean();
 		ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
 		messageSource.setBasename("/WEB-INF/messages/validation");
-		if (environment.acceptsProfiles("embedded")) {
+		if (environment.acceptsProfiles("embedded") || environment.acceptsProfiles("test")) {
 			messageSource.setCacheSeconds(0);
 		}
 		factory.setValidationMessageSource(messageSource);
@@ -141,7 +141,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	public MessageSource messageSource() {
 		ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
 		messageSource.setBasename("/WEB-INF/messages/messages");
-		if (environment.acceptsProfiles("embedded")) {
+		if (environment.acceptsProfiles("embedded") || environment.acceptsProfiles("test")) {
 			messageSource.setCacheSeconds(0);
 		}
 		return messageSource;

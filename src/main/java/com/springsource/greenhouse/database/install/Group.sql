@@ -1,4 +1,4 @@
-create table MemberGroup (id identity,
+create table MemberGroup (id SERIAL,
 					name varchar not null unique,
 					slug varchar not null unique,
 					description varchar,

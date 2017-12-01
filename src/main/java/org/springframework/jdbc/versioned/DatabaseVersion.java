@@ -24,7 +24,14 @@ package org.springframework.jdbc.versioned;
 public class DatabaseVersion {
 
 	private final int major;
-	
+
+	/**
+	 * Actual version of database
+	 */
+	public static DatabaseVersion newest() {
+		return new DatabaseVersion(4);
+	}
+
 	/**
 	 * Parse a DatabaseVersion from a String.
 	 */

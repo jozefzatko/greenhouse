@@ -63,7 +63,13 @@ public class DatabaseUpgrader {
 	// internal helpers
 	
 	private org.springframework.jdbc.versioned.DatabaseUpgrader createUpgrader(DataSource dataSource) {
+
 		GenericDatabaseUpgrader upgrader = new GenericDatabaseUpgrader(dataSource);
+
+		if (upgrader.getCurrentDatabaseVersion().equals(DatabaseVersion.newest())) {
+			return upgrader;
+		}
+
 		if (upgrader.getCurrentDatabaseVersion().equals(DatabaseVersion.zero())) {
 			addInstallChangeSet(upgrader);			
 		} else {

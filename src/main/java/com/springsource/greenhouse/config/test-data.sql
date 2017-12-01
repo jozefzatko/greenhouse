@@ -38,47 +38,47 @@ insert into VenueRoom (venue, id, name, capacity, locationHint) values (1, 10, '
 
 insert into MemberGroup (name, slug, description, hashtag, leader) values ('SpringOne2gx', 's2gx', 'The premier conference series for Spring technologies', '#s2gx', 1);
 
-insert into Event (title, timeZone, startTime, endTime, slug, description, memberGroup) values ('SpringOne 2GX', 'America/New_York', '2012-10-15 22:00:00Z', '2012-10-18 22:00:00Z', 'dc', 'The Spring, Groovy, and Grails event of the year!', 1);
+insert into Event (title, timeZone, startTime, endTime, slug, description, memberGroup) values ('SpringOne 2GX', 'America/New_York', '2018-05-15 22:00:00Z', '2018-05-18 22:00:00Z', 'dc', 'The Spring, Groovy, and Grails event of the year!', 1);
 insert into EventVenue (event, venue) values (1, 1);
 
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'REGISTRATION - SPRINGONE 2GX', '2012-10-15 20:30:00Z', '2012-10-15 23:30:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'WELCOME RECEPTION', '2012-10-15 21:30:00Z', '2012-10-15 23:30:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'DINNER', '2012-10-15 23:30:00Z', '2012-10-16 00:30:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'Keynote', '2012-10-16 00:30:00Z', '2012-10-16 01:45:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAKFAST/LATE REGISTRATION', '2012-10-16 12:30:00Z', '2012-10-16 13:30:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-16 13:30:00Z', '2012-10-16 15:00:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'MORNING BREAK', '2012-10-16 15:00:00Z', '2012-10-16 15:15:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-16 15:15:00Z', '2012-10-16 16:45:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'LUNCH', '2012-10-16 16:45:00Z', '2012-10-16 17:45:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-16 17:45:00Z', '2012-10-16 19:15:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2012-10-16 19:15:00Z', '2012-10-16 19:45:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-16 19:45:00Z', '2012-10-16 21:15:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2012-10-16 21:15:00Z', '2012-10-16 21:30:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-16 21:30:00Z', '2012-10-16 23:00:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2012-10-16 23:00:00Z', '2012-10-16 23:30:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'DINNER', '2012-10-16 23:30:00Z', '2012-10-17 00:30:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'Keynote', '2012-10-17 00:30:00Z', '2012-10-17 01:45:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'SPONSOR RECEPTION', '2012-10-17 01:45:00Z', '2012-10-17 03:00:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'REGISTRATION - SPRINGONE 2GX', '2018-05-15 20:30:00Z', '2018-05-15 23:30:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'WELCOME RECEPTION', '2018-05-15 21:30:00Z', '2018-05-15 23:30:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'DINNER', '2018-05-15 23:30:00Z', '2018-05-16 00:30:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'Keynote', '2018-05-16 00:30:00Z', '2018-05-16 01:45:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAKFAST/LATE REGISTRATION', '2018-05-16 12:30:00Z', '2018-05-16 13:30:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-16 13:30:00Z', '2018-05-16 15:00:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'MORNING BREAK', '2018-05-16 15:00:00Z', '2018-05-16 15:15:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-16 15:15:00Z', '2018-05-16 16:45:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'LUNCH', '2018-05-16 16:45:00Z', '2018-05-16 17:45:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-16 17:45:00Z', '2018-05-16 19:15:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2018-05-16 19:15:00Z', '2018-05-16 19:45:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-16 19:45:00Z', '2018-05-16 21:15:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2018-05-16 21:15:00Z', '2018-05-16 21:30:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-16 21:30:00Z', '2018-05-16 23:00:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2018-05-16 23:00:00Z', '2018-05-16 23:30:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'DINNER', '2018-05-16 23:30:00Z', '2018-05-17 00:30:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'Keynote', '2018-05-17 00:30:00Z', '2018-05-17 01:45:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'SPONSOR RECEPTION', '2018-05-17 01:45:00Z', '2018-05-17 03:00:00Z');
 
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAKFAST', '2012-10-17 12:30:00Z', '2012-10-17 13:30:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-17 13:30:00Z', '2012-10-17 15:00:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'MORNING BREAK', '2012-10-17 15:00:00Z', '2012-10-17 15:15:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-17 15:15:00Z', '2012-10-17 16:45:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'LUNCH', '2012-10-17 16:45:00Z', '2012-10-17 17:45:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-17 17:45:00Z', '2012-10-17 19:15:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2012-10-17 19:15:00Z', '2012-10-17 19:45:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-17 19:45:00Z', '2012-10-17 21:15:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2012-10-17 21:15:00Z', '2012-10-17 21:30:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-17 21:30:00Z', '2012-10-17 23:00:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'DINNER', '2012-10-17 23:00:00Z', '2012-10-18 00:00:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAKFAST', '2018-05-17 12:30:00Z', '2018-05-17 13:30:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-17 13:30:00Z', '2018-05-17 15:00:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'MORNING BREAK', '2018-05-17 15:00:00Z', '2018-05-17 15:15:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-17 15:15:00Z', '2018-05-17 16:45:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'LUNCH', '2018-05-17 16:45:00Z', '2018-05-17 17:45:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-17 17:45:00Z', '2018-05-17 19:15:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2018-05-17 19:15:00Z', '2018-05-17 19:45:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-17 19:45:00Z', '2018-05-17 21:15:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2018-05-17 21:15:00Z', '2018-05-17 21:30:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-17 21:30:00Z', '2018-05-17 23:00:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'DINNER', '2018-05-17 23:00:00Z', '2018-05-18 00:00:00Z');
 
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAKFAST', '2012-10-18 12:30:00Z', '2012-10-18 13:30:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-18 13:30:00Z', '2012-10-18 15:00:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2012-10-18 15:00:00Z', '2012-10-18 15:15:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-18 15:15:00Z', '2012-10-18 16:45:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'LUNCH', '2012-10-18 16:45:00Z', '2012-10-18 17:45:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2012-10-18 17:45:00Z', '2012-10-18 19:15:00Z');
-insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'END OF CONFERENCE', '2012-10-18 19:15:00Z', '2012-10-18 19:30:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAKFAST', '2018-05-18 12:30:00Z', '2018-05-18 13:30:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-18 13:30:00Z', '2018-05-18 15:00:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'BREAK', '2018-05-18 15:00:00Z', '2018-05-18 15:15:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-18 15:15:00Z', '2018-05-18 16:45:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'LUNCH', '2018-05-18 16:45:00Z', '2018-05-18 17:45:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, null, '2018-05-18 17:45:00Z', '2018-05-18 19:15:00Z');
+insert into EventTimeSlot (event, label, startTime, endTime) values (1, 'END OF CONFERENCE', '2018-05-18 19:15:00Z', '2018-05-18 19:30:00Z');
 
 insert into EventTrack (event, code, name, description, chair) values (1, 'spr', 'Essential Spring', 'Spring techniques and technologies applicable to most classes of applications', 1);
 insert into EventTrack (event, code, name, description, chair) values (1, 'web', 'Web Application Development', 'What you need to know to build modern web applications', 1);
@@ -322,7 +322,7 @@ insert into EventSessionLeader (event, session, leader) values (1, 32, 33);
 
 insert into Leader (name) values ('Rob Woollenn');
 insert into EventSession (event, id, title, timeSlot, description, hashtag, track, venue, room) values (1, 33, 'Inside the Force.com Cloud Platform', 12, 
-	'To truly understand the sophistication and potential of the Force.com platform we are going to peek under the kimono in this session. Join salesforce.com principal architect, Rob Woollen, as he discusses the Force.com multi-tenant architecture implementation. YouÕll learn the details of how the Force.com platform maintains high performance and scalability for over 80,000 customers and thousands of cloud applications.',
+	'To truly understand the sophistication and potential of the Force.com platform we are going to peek under the kimono in this session. Join salesforce.com principal architect, Rob Woollen, as he discusses the Force.com multi-tenant architecture implementation. Youï¿½ll learn the details of how the Force.com platform maintains high performance and scalability for over 80,000 customers and thousands of cloud applications.',
 	'#inforce', 'vmw', 1, 5);
 insert into EventSessionLeader (event, session, leader) values (1, 33, 34);
 
@@ -371,7 +371,7 @@ insert into EventSessionLeader (event, session, leader) values (1, 39, 38);
 insert into Leader (name) values ('Scott Andrews');
 insert into Leader (name) values ('Jon Travis');
 insert into EventSession (event, id, title, timeSlot, description, hashtag, track, venue, room) values (1, 40, 'Diagnosing Performance Issues with Spring Insight before it''s a Problem', 14, 
-	'What if a user reports your application is slow? At that point, itÕs too late. Runtime performance is more than an ops teamÕs concern. Continuous performance profiling is an important part of the agile developerÕs bag of tools. Spring Insight enables developers to watch what their application is actually doing in real time and zero in on performance issues. Come to this session to learn about Spring Insight from its creators. Learn how to easily enhance the default instrumentation to gain even greater visibility into your application. ',
+	'What if a user reports your application is slow? At that point, itï¿½s too late. Runtime performance is more than an ops teamï¿½s concern. Continuous performance profiling is an important part of the agile developerï¿½s bag of tools. Spring Insight enables developers to watch what their application is actually doing in real time and zero in on performance issues. Come to this session to learn about Spring Insight from its creators. Learn how to easily enhance the default instrumentation to gain even greater visibility into your application. ',
 	'#insight', 'int', 1, 1);
 insert into EventSessionLeader (event, session, leader, rank) values (1, 40, 39, 2);
 insert into EventSessionLeader (event, session, leader, rank) values (1, 40, 40, 1);
@@ -888,6 +888,6 @@ insert into EventSessionLeader (event, session, leader) values (1, 115, 19);
 
  
 insert into EventSession (event, id, title, timeSlot, description, hashtag, track, venue, room) values (1, 116, 'Grails + CouchDB', 35, 
-	'"CouchDB is built of the Web. IÕve never seen software that so completely embraces the philosophies behind HTTP." Jacob Kaplan-Moss, Django Developer',
+	'"CouchDB is built of the Web. I have never seen software that so completely embraces the philosophies behind HTTP." Jacob Kaplan-Moss, Django Developer',
 	'#couchdb', 'grf', 1, 9);
 insert into EventSessionLeader (event, session, leader) values (1, 116, 56);

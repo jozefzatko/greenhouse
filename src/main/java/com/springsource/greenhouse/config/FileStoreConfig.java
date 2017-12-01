@@ -41,7 +41,7 @@ public class FileStoreConfig {
 	 * @author Keith Donald
 	 */
 	@Configuration
-	@Profile("embedded")
+	@Profile({ "embedded", "test" })
 	static class Embedded {
 
 		@Inject

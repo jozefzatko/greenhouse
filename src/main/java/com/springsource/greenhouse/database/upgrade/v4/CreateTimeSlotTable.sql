@@ -1,5 +1,5 @@
 create table EventTimeSlot (
-	id identity,
+	id SERIAL,
 	startTime timestamp not null,
 	endTime timestamp not null,
 	primary key (id)	
